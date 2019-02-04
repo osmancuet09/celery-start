@@ -1,4 +1,4 @@
-###Initial project set up \
+### Initial project set up \
 go to home directory \
 ```cd ~ ``` \
 make a project directory \
@@ -17,7 +17,7 @@ create django app named polls \
 ``` python manage.py startapp polls ``` \
 this is for db migration default sqlite3 \
 ``` python manage.py migrate ``` \
-###Now we need to add polls url to mysite \
+### Now we need to add polls url to mysite \
 Now add bellow in mysite.urls.py
 ```python 
 	urlpatterns = [
@@ -45,7 +45,7 @@ You will get bellow things in a web page:
 ### Now we need to install rabbitmq as a message broker as following link:
 [install rabbitmq installation guideline](https://www.rabbitmq.com/install-debian.html)
 
-####Now let's integrate celery with this project.
+#### Now let's integrate celery with this project.
 Create a mysite.celery.py file and paste this code:
 ```python
 	from __future__ import absolute_import, unicode_literals
