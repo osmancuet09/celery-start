@@ -1,4 +1,4 @@
-### Initial project set up \
+### Initial project set up 
 go to home directory \
 ```cd ~ ``` \
 make a project directory \
@@ -17,7 +17,7 @@ create django app named polls \
 ``` python manage.py startapp polls ``` \
 this is for db migration default sqlite3 \
 ``` python manage.py migrate ``` \
-### Now we need to add polls url to mysite \
+### Now we need to add polls url to mysite 
 Now add bellow in mysite.urls.py
 ```python 
 	urlpatterns = [
