@@ -1,24 +1,24 @@
-###Initial project set up
-go to home directory
-```cd ~ ```
-make a project directory
-```mkdir celery-startn ```
-go to project directory
-```cd celery-start ```
-create a virtual environment with python3 named venv
-``` virtualenv -p python3 venv ```
-activate virtual environment
-``` source celery-start/venv/bin/activate ```
-install django in virtual environment
-``` pip install django ```
-create django project named mysite
-``` django-admin startproject mysite ```
-create django app named polls
-``` python manage.py startapp polls ```
-this is for db migration default sqlite3
-``` python manage.py migrate ```
-###Now we need to add polls url to mysite
-Now add bellow in mysite.urls.py
+###Initial project set up \
+go to home directory \
+```cd ~ ``` \
+make a project directory \
+```mkdir celery-startn ``` \
+go to project directory \
+```cd celery-start ``` \
+create a virtual environment with python3 named venv \
+``` virtualenv -p python3 venv ``` \
+activate virtual environment \
+``` source celery-start/venv/bin/activate ``` \
+install django in virtual environment\
+``` pip install django ``` \
+create django project named mysite \
+``` django-admin startproject mysite ``` \
+create django app named polls \
+``` python manage.py startapp polls ``` \
+this is for db migration default sqlite3 \
+``` python manage.py migrate ``` \
+###Now we need to add polls url to mysite \
+Now add bellow in mysite.urls.py \
 ```python 
 	urlpatterns = [
 	   path('polls/', include('polls.urls')), #this is needed to add
