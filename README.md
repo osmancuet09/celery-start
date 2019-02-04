@@ -37,10 +37,10 @@ This is for run the application.
 ```console
 	python manage.py runserver 
 ```
-Then it looks ok. A server will run at 0.0.0.0:8000
-Go to http://127.0.0.1:8000/polls/
-You will get bellow things in a web page:
-- Hello, world. You're at the polls index.
+Then it looks ok. A server will run at 0.0.0.0:8000 \
+Go to http://127.0.0.1:8000/polls/ \
+You will get bellow things in a web page: \
+- Hello, world. You're at the polls index. \
 
 ### Now we need to install rabbitmq as a message broker as following link:
 [install rabbitmq installation guideline](https://www.rabbitmq.com/install-debian.html)
