@@ -18,7 +18,7 @@ create django app named polls \
 this is for db migration default sqlite3 \
 ``` python manage.py migrate ``` \
 ###Now we need to add polls url to mysite \
-Now add bellow in mysite.urls.py \
+Now add bellow in mysite.urls.py
 ```python 
 	urlpatterns = [
 	   path('polls/', include('polls.urls')), #this is needed to add
@@ -35,7 +35,8 @@ Then add a polls.urls.py file and add bellow things:
 ```
 This is for run the application.
 ```console
-python manage.py runserver ```
+	python manage.py runserver 
+```
 Then it looks ok. A server will run at 0.0.0.0:8000
 Go to http://127.0.0.1:8000/polls/
 You will get bellow things in a web page:
